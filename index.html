@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,64 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   
+    <!-- Site Warning - REQUIRED ID: siteWarning -->
+    <div class="site-warning" id="siteWarning">
+        <div class="warning-content">
+            <!-- REQUIRED ID: closeButton -->
+            <button class="close-button" id="closeButton">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="warning-icon">
+                <i class="fas fa-flask"></i>
+            </div>
+            <h1 class="warning-title">Chemistry Lab Database</h1>
+            
+            <div class="site-description">
+                A big collection of 100+ lab chemicals with all the safety stuff and what they do.
+            </div>
+            
+            <div class="features-list">
+                <li><i class="fas fa-check-circle"></i> 100+ Chemical Stuff</li>
+                <li><i class="fas fa-check-circle"></i> Safety Info & Handling</li>
+                <li><i class="fas fa-check-circle"></i> Chemical Types</li>
+                <li><i class="fas fa-check-circle"></i> Search & Find Tools</li>
+                <li><i class="fas fa-check-circle"></i> Cool Lab Design</li>
+            </div>
+            
+            <div class="loading-bar">
+                <!-- REQUIRED ID: loadingProgress -->
+                <div class="loading-progress" id="loadingProgress"></div>
+            </div>
+            
+            <div class="timer-display" id="timer">
+                Closing in: <!-- REQUIRED ID: countdown --><span id="countdown">20</span> seconds
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/nikhilnick5046" class="social-link instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/Nikhilnick5046" class="social-link twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/nikhil.nick.392111" class="social-link facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/Nikhilnick5050" class="social-link github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nikhil-shinde-286937367" class="social-link linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            
+            <div class="developer-info">
+                Made by Nikhil Shinde<br>Call me: 8623947038
+            </div>
+        </div>
+    </div>
+
     <!-- Header - REQUIRED ID: mainHeader -->
     <header id="mainHeader">
         <div class="container">
@@ -181,7 +239,7 @@
     <!-- Acknowledgement Section -->
     <section id="acknowledgement">
         <div class="container">
-            <h2 class="section-title">Acknowledgement</h2>
+            <h2 class="section-title">Thanks To</h2>
             <div class="acknowledgement-content">
                 <p>We want to say a big thank you to our guide <strong> Dr. Amol Kharche</strong> for his help, guidance, and support during this project. His good ideas and knowledge helped us understand how chemicals work, what bad effects they can have, and why they're important.</p>
                 <p>We also thank the Chemistry Department, PCCOE, for giving us the stuff and lab to do this study. Finally, thanks to our classmates, friends, and family for helping us out.</p>
@@ -348,6 +406,4 @@
     <!-- Link to JavaScript file -->
     <script src="index.js"></script>
 </body>
-
 </html>
-
