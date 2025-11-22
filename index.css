@@ -18,25 +18,22 @@
 }
 
 .dark-theme {
-    :root {
-    --primary: #c7c8f5;          /* Soft lavender for headings */
-    --secondary: #6fa83a;        /* Muted green – balanced & readable */
-    --accent: #2dbcbc;           /* Brighter teal accent */
-    --light: #e05b8c;            /* Light pink highlight */
-    --dark: #0b0b0b;             /* Deep dark background */
-    
-    --gray-light: #a0aec0;       /* Light gray for text on dark */
-    --gray-medium: #718096;      /* Medium gray for secondary text */
-    --gray-dark: #2d3748;        /* Dark gray for surfaces */
-
-    --card-bg: rgba(30, 33, 40, 0.9);   /* Slightly lighter for cards */
-    --card-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
-
-    --success: #27ae60;          /* Stronger green */
-    --warning: #f39c12;          /* Smooth warning yellow */
-    --danger: #e74c3c;           /* Good as-is */
-    --info: #2dbcbc;             /* Same as accent */
-
+    --primary: #bebfdd;
+    --secondary: #acb499;
+    --accent: #27a7a7;
+    --light: #952157;
+    --dark: #0f0f0f;
+    --gray-light: #4a5568;
+    --gray-medium: #718096;
+    --gray-dark: #e2e8f0;
+    --card-bg: rgba(26, 32, 44, 0.95);
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --success: #2ecc71;
+    --warning: #f1c40f;
+    --danger: #e74c3c;
+    --info: #27a7a7;
+    --organic: #8e44ad;
+}
 
 
 /* Enhanced Particle System */
@@ -2013,4 +2010,3 @@ button:focus-visible,
         border: 1px solid #ccc !important;
     }
 }
-
