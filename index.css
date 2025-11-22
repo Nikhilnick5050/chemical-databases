@@ -18,11 +18,11 @@
 }
 
 .dark-theme {
-    --primary: #1a1a2e;
-    --secondary: #16213e;
+    --primary: #1a9f30;
+    --secondary: #4d8b07;
     --accent: #27a7a7;
-    --light: #0f0f1a;
-    --dark: #ffffff;
+    --light: #952157;
+    --dark: #0f0f0f;
     --gray-light: #4a5568;
     --gray-medium: #718096;
     --gray-dark: #e2e8f0;
