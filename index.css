@@ -19,21 +19,24 @@
 
 .dark-theme {
    :root {
-    --primary: #c7c8f5;
-    --secondary: #5561b8;
-    --accent: #17a2ff;
-    --light: #f2b90f;
-    --dark: #0f0f0f;
-    --gray-light: #cbd5e1;
-    --gray-medium: #94a3b8;
-    --gray-dark: #1f2937;
-    --card-bg: rgba(10, 12, 16, 0.85);
-    --card-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
-    --success: #2ea3ff;
-    --warning: #f59e0b;
-    --danger: #e74c3c;
-    --info: #38bdf8;
-    --organic: #8e44ad;
+    :root {
+    --primary: #b9baf0;
+    --secondary: #3f5a2a;
+    --accent: #1f8f8f;
+    --light: #7a1c45;
+    --dark: #0a0a0a;
+    --gray-light: #9aa4b3;
+    --gray-medium: #6b7280;
+    --gray-dark: #1e242c;
+    --card-bg: rgba(20, 24, 30, 0.95);
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    --success: #1e8a57;
+    --warning: #d4a60a;
+    --danger: #c0392b;
+    --info: #1f8f8f;
+    --organic: #6d3a9c;
+}
+
 }
 
 }
@@ -2013,5 +2016,6 @@ button:focus-visible,
         border: 1px solid #ccc !important;
     }
 }
+
 
 
