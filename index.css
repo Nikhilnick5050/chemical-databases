@@ -23,10 +23,10 @@
     --secondary: #2d3748;
     --accent: #2ecc71;
     --light: #0f0f1a;
-    --dark: #f8f9fa;
+    --dark: #f8f9fa; /* Fixed: This makes text visible in dark mode */
     --gray-light: #4a5568;
     --gray-medium: #718096;
-    --gray-dark: #e2e8f0;
+    --gray-dark: #e2e8f0; /* Fixed: This makes descriptions visible */
     --card-bg: rgba(26, 32, 44, 0.95);
     --card-shadow: 0 4px 20px rgba(46, 204, 113, 0.15);
     --success: #2ecc71;
@@ -53,7 +53,7 @@ body {
     position: relative;
 }
 
-/* Particle Background - Visible in both modes */
+/* Particle Background - Working in both modes */
 .particle-container {
     position: fixed;
     top: 0;
@@ -68,69 +68,78 @@ body {
     position: absolute;
     border-radius: 50%;
     background: var(--particle-color);
-    opacity: 0.3;
+    opacity: 0.4;
     animation: float 20s infinite linear;
     mix-blend-mode: screen;
 }
 
-/* Larger particles */
+/* Create particles of different sizes */
 .particle:nth-child(3n) {
     width: 12px;
     height: 12px;
-    opacity: 0.4;
+    opacity: 0.5;
+    animation-duration: 25s;
 }
 
 .particle:nth-child(3n+1) {
     width: 8px;
     height: 8px;
     opacity: 0.3;
+    animation-duration: 30s;
 }
 
 .particle:nth-child(3n+2) {
     width: 15px;
     height: 15px;
-    opacity: 0.5;
+    opacity: 0.6;
+    animation-duration: 20s;
 }
 
+/* Particle animation */
 @keyframes float {
     0% {
-        transform: translateY(0) translateX(0) rotate(0deg);
+        transform: translateY(100vh) translateX(0) rotate(0deg);
         opacity: 0.3;
     }
     25% {
-        transform: translateY(-40vh) translateX(25vw) rotate(90deg);
-        opacity: 0.5;
+        transform: translateY(50vh) translateX(25vw) rotate(90deg);
+        opacity: 0.6;
     }
     50% {
-        transform: translateY(20vh) translateX(-25vw) rotate(180deg);
+        transform: translateY(0) translateX(50vw) rotate(180deg);
         opacity: 0.4;
     }
     75% {
-        transform: translateY(-20vh) translateX(15vw) rotate(270deg);
-        opacity: 0.6;
+        transform: translateY(50vh) translateX(75vw) rotate(270deg);
+        opacity: 0.7;
     }
     100% {
-        transform: translateY(0) translateX(0) rotate(360deg);
+        transform: translateY(100vh) translateX(100vw) rotate(360deg);
         opacity: 0.3;
     }
 }
 
-/* Additional particle animation for variety */
+/* Alternative particle animation */
 @keyframes float-alt {
     0% {
-        transform: translateY(100vh) translateX(0) scale(0.8);
+        transform: translateY(0) translateX(0) scale(0.8);
         opacity: 0.2;
     }
-    50% {
-        transform: translateY(0) translateX(50vw) scale(1.2);
+    33% {
+        transform: translateY(-40vh) translateX(33vw) scale(1.2);
         opacity: 0.5;
     }
+    66% {
+        transform: translateY(20vh) translateX(66vw) scale(0.9);
+        opacity: 0.4;
+    }
     100% {
-        transform: translateY(100vh) translateX(100vw) scale(0.8);
+        transform: translateY(0) translateX(100vw) scale(0.8);
         opacity: 0.2;
     }
 }
 
+/* Apply alternative animation to some particles */
 .particle:nth-child(odd) {
     animation: float-alt 25s infinite linear;
 }
@@ -142,7 +151,7 @@ body {
     padding: 0 15px;
 }
 
-/* Header Styles - Removed blue color */
+/* Header Styles */
 header {
     background-color: var(--primary);
     padding: 20px 0;
@@ -269,7 +278,7 @@ header.scrolled {
     transform: rotate(30deg);
 }
 
-/* Hero Section - Fixed subtitle visibility */
+/* Hero Section */
 .hero {
     padding: 180px 0 100px;
     text-align: center;
@@ -434,7 +443,7 @@ section {
     }
 }
 
-/* Search Section - Removed blue background */
+/* Search Section */
 .search-section {
     background-color: var(--secondary);
     padding: 50px 0;
@@ -516,7 +525,7 @@ section {
     background: var(--card-bg);
     border: 1px solid var(--gray-light);
     border-radius: 30px;
-    color: var(--dark);
+    color: var(--dark); /* Fixed: This makes filter text visible */
     cursor: pointer;
     transition: var(--transition);
     font-weight: 500;
@@ -617,7 +626,7 @@ section {
 .chemical-name {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: var(--primary);
+    color: var(--primary); /* Fixed: This makes chemical names visible */
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -627,14 +636,14 @@ section {
 .chemical-formula {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: var(--gray-dark);
+    color: var(--gray-dark); /* Fixed: This makes formulas visible */
     font-style: italic;
     font-weight: 500;
 }
 
 .chemical-description {
     font-size: 0.95rem;
-    color: var(--gray-dark);
+    color: var(--gray-dark); /* Fixed: This makes descriptions visible */
     margin-bottom: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -911,7 +920,7 @@ section {
     text-decoration: underline;
 }
 
-/* Footer Styling - Removed blue background */
+/* Footer Styling */
 .footer {
     background: var(--primary);
     color: var(--light);
@@ -1093,7 +1102,7 @@ section {
     font-size: 0.9rem;
 }
 
-/* Source Code Bar - Removed blue background */
+/* Source Code Bar */
 .source-code-bar {
     background: var(--primary);
     color: var(--light);
@@ -1177,16 +1186,6 @@ section {
     background: #e74c3c;
     color: white;
     transform: scale(1.1);
-}
-
-/* iPhone notch and safe area support */
-@supports(padding: max(0px)) {
-    .warning-content {
-        padding-left: max(20px, env(safe-area-inset-left));
-        padding-right: max(20px, env(safe-area-inset-right));
-        padding-top: max(25px, env(safe-area-inset-top));
-        padding-bottom: max(25px, env(safe-area-inset-bottom));
-    }
 }
 
 .warning-icon {
@@ -1398,132 +1397,6 @@ section {
     
     .footer-text {
         font-size: 0.9rem;
-    }
-}
-
-/* Mobile-specific optimizations */
-@media (max-width: 480px) {
-    .warning-content {
-        padding: 20px 15px;
-        margin: 5px;
-    }
-    
-    .close-button {
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    
-    .warning-icon {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
-    }
-    
-    .warning-title {
-        font-size: 1.5rem;
-        margin-bottom: 12px;
-    }
-    
-    .site-description {
-        font-size: 0.9rem;
-        padding: 12px;
-        margin-bottom: 15px;
-    }
-    
-    .features-list {
-        margin: 15px 0;
-        padding: 0 10px;
-    }
-    
-    .features-list li {
-        font-size: 0.85rem;
-        margin: 8px 0;
-    }
-    
-    .timer-display {
-        font-size: 1rem;
-        margin: 15px 0;
-        padding: 10px;
-    }
-    
-    .social-link {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
-    }
-    
-    .developer-info {
-        font-size: 0.85rem;
-    }
-}
-
-/* Very small phones */
-@media (max-width: 360px) {
-    .warning-content {
-        padding: 15px 12px;
-    }
-    
-    .warning-title {
-        font-size: 1.3rem;
-    }
-    
-    .site-description {
-        font-size: 0.85rem;
-        padding: 10px;
-    }
-    
-    .features-list li {
-        font-size: 0.8rem;
-    }
-    
-    .social-links {
-        gap: 8px;
-    }
-    
-    .social-link {
-        width: 38px;
-        height: 38px;
-        font-size: 1rem;
-    }
-}
-
-/* iPhone landscape */
-@media (max-width: 768px) and (orientation: landscape) {
-    .warning-content {
-        max-height: 85vh;
-        padding: 15px;
-    }
-    
-    .close-button {
-        top: 8px;
-        right: 8px;
-    }
-    
-    .warning-icon {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    
-    .warning-title {
-        font-size: 1.3rem;
-        margin-bottom: 8px;
-    }
-    
-    .site-description {
-        font-size: 0.85rem;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .features-list {
-        margin: 10px 0;
-    }
-    
-    .features-list li {
-        margin: 6px 0;
-        font-size: 0.8rem;
     }
 }
 
