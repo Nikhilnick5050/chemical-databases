@@ -18,21 +18,21 @@
 }
 
 .dark-theme {
-    --primary: #ffffff;
-    --secondary: #86bc9b;
-    --accent: #409c1f;
-    --light: #4b873b;
-    --dark: #0f0f0f;
-    --gray-light: #4a5568;
+    --primary: #c7c8f5;
+    --secondary: #6fa83a;
+    --accent: #2dbcbc;
+    --light: #e05b8c;
+    --dark: #0b0b0b;
+    --gray-light: #a0aec0;
     --gray-medium: #718096;
-    --gray-dark: #e2e8f0;
-    --card-bg: rgba(26, 32, 44, 0.95);
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --success: #2ecc71;
-    --warning: #f1c40f;
+    --gray-dark: #2d3748;
+    --card-bg: rgba(30, 33, 40, 0.9);
+    --card-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
+    --success: #27ae60;
+    --warning: #f39c12;
     --danger: #e74c3c;
-    --info: #27a7a7;
-    --organic: #8e44ad;
+    --info: #2dbcbc;
+    --organic: #9b59b6
 }
 
 
@@ -2010,3 +2010,4 @@ button:focus-visible,
         border: 1px solid #ccc !important;
     }
 }
+
