@@ -4,7 +4,7 @@ A modern, searchable web application for exploring detailed information about la
 🔗 **Live Project:** 
 
 https://chemical-database.vercel.app/
-
+https://chemical-database-git-main-nikhil-shinde-s-projects.vercel.app/
 
 ## 📌 Project Overview  
 This project is a **Chemistry Laboratory Chemical Database** built using HTML, CSS, and JavaScript.  
