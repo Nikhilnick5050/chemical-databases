@@ -1,12 +1,10 @@
 # 🧪 Chemistry Laboratory Database  
 A modern, searchable web application for exploring detailed information about laboratory chemicals.
 
-🔗 **Live Project:**  
+🔗 **Live Project:** 
 
-https://project-chemicaldatabase.vercel.app/
-https://vercel.com/nikhil-shinde-s-projects/chemical-database/E5scaQmigDaDNKwGaVbittGmh5Zg
+https://chemical-database.vercel.app/
 
----
 
 ## 📌 Project Overview  
 This project is a **Chemistry Laboratory Chemical Database** built using HTML, CSS, and JavaScript.  
