@@ -3,7 +3,8 @@ A modern, searchable web application for exploring detailed information about la
 
 🔗 **Live Project:**  
 
-https://project-chemicaldatabases.vercel.app/
+https://project-chemicaldatabase.vercel.app/
+https://vercel.com/nikhil-shinde-s-projects/chemical-database/E5scaQmigDaDNKwGaVbittGmh5Zg
 
 ---
 
