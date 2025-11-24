@@ -2,9 +2,9 @@
 A modern, searchable web application for exploring detailed information about laboratory chemicals.
 
 🔗 **Live Project:**  
-https://pccoe-chemicaldatabases-mx4mlky9o-nikhil-shinde-s-projects.vercel.app/
+https://project-chemicaldatabases-mx4mlky9o-nikhil-shinde-s-projects.vercel.app/
 
-https://pccoe-chemicaldatabases.vercel.app/
+https://project-chemicaldatabases.vercel.app/
 
 ---
 
