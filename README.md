@@ -219,9 +219,7 @@ Each chemical includes:
 - **Open Source Community** - Libraries and tools
 - **Chemical Database Providers** - Reference materials
 
-## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ⚠️ Disclaimer
 
